@@ -1,0 +1,70 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{estilos}[2026/10/29 Plantilla posgrado - base editorial revisable]
+\RequirePackage[spanish,es-tabla]{babel}
+\RequirePackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\PackageWarningNoLine{estilos}{Times New Roman no disponible. Se usa Tinos SOLO para previsualizacion}\setmainfont{Tinos}}
+\RequirePackage[a4paper,margin=2.5cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{array,tabularx,booktabs,multirow,pdflscape,xcolor,colortbl,hhline}
+\RequirePackage{setspace,enumitem,ragged2e}
+\RequirePackage[none]{hyphenat}
+\RequirePackage{xurl}
+\RequirePackage{url}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage{titlesec}
+\RequirePackage{caption}
+\emergencystretch=3em
+% VALORES BASE heredados del trabajo con el Word. La equivalencia no esta certificada.
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{8pt} % cuerpo: evita acumulacion de espacios
+\AtBeginDocument{\setstretch{1.62}}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\titleformat{\section}{\normalfont\bfseries\normalsize}{}{0pt}{}
+\titleformat{\subsection}{\normalfont\bfseries\normalsize}{}{0pt}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\normalsize}{}{0pt}{}
+% Titulos no acumulan parskip con espaciado especial: ajuste bajo validacion.
+\titlespacing*{\section}{0pt}{0pt}{-8pt}
+\titlespacing*{\subsection}{0pt}{0pt}{-8pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{-8pt}
+\newcommand{\tituloManual}[1]{\par\noindent\textbf{#1}\par\nobreak\vspace{-8pt}}
+\newcommand{\generalitem}[2]{\par\addvspace{3pt}\noindent\makebox[1.15cm][l]{\textbf{#1}}\textbf{#2}\par\nobreak\vspace{-5pt}}
+\newcommand{\generalsub}[2]{\par\addvspace{2pt}\noindent\hspace*{1.2cm}\makebox[1.35cm][l]{\textbf{#1}}\textbf{#2}\par\nobreak\vspace{-5pt}}
+% Lista normal y lista inmediatamente despues del titulo: el espacio es de la lista.
+\newlist{listacuerpo}{itemize}{1}
+\setlist[listacuerpo]{label={\raisebox{0.25ex}{\rule{0.8mm}{0.8mm}}},leftmargin=0.72cm,labelsep=.40cm,itemsep=0pt,parsep=0pt,topsep=3pt,partopsep=0pt}
+\newlist{listatitulo}{itemize}{1}
+\setlist[listatitulo]{label={\raisebox{0.25ex}{\rule{0.8mm}{0.8mm}}},leftmargin=0.72cm,labelsep=.40cm,itemsep=0pt,parsep=0pt,topsep=9pt,partopsep=0pt}
+\newlist{listarecursos}{itemize}{1}
+\setlist[listarecursos]{label=\textendash,leftmargin=3.25cm,labelsep=.25cm,itemsep=0pt,topsep=1pt,parsep=0pt}
+% Referencias con sangria francesa. Cada \referencia es una entrada independiente.
+\newcommand{\referencia}[1]{\par\begingroup\setlength{\parskip}{0pt}\noindent\hangindent=1.27cm\hangafter=1 #1\par\endgroup\vspace{9pt}}
+% Nota: si se cambia un valor global, recompilar y revisar todos los bloques.
+
+% La separacion antes de una lista depende de la LISTA, no del titulo.
+% Utilice listatitulo si la lista sigue inmediatamente a un encabezado.
+% Estilos obligatorios de portada: interlineado independiente del cuerpo.
+% Los valores se aplican solo a los dos bloques centrales; no afectan Generalidades.
+\newcommand{\interlineadoGradoPortada}{1.35}
+\newcommand{\interlineadoTituloTesisPortada}{1.35}
+\newcommand{\gradoPortada}[1]{%
+  \par\begingroup\setstretch{\interlineadoGradoPortada}%
+  \bfseries #1\par\endgroup%
+}
+% La portada se construye mediante un bloque que incluye ambas reglas horizontales.
+\newcommand{\bloqueTituloPortada}[1]{%
+  \par\vspace{.4cm}\noindent\rule{\textwidth}{.7pt}\par\vspace{.3cm}%
+  \begingroup\setstretch{\interlineadoTituloTesisPortada}#1\par\endgroup\vspace{.3cm}\noindent\rule{\textwidth}{.7pt}\par\vspace{.6cm}%
+}
+
+\newcommand{\tituloManualTabla}[1]{\par\noindent\textbf{#1}\par\nobreak\vspace{3pt}}
+
+% Espacio entre titulo de referencias y primera entrada: solo al abrir la seccion.
+\newcommand{\iniciarReferencias}{\par\vspace{10pt}\noindent}
+
+% Todas las URL adoptan la familia romana principal; no usar fuente monoespaciada.
+\urlstyle{same}
+\AtBeginDocument{\urlstyle{same}}
+% Solo paginas apaisadas: numeracion en coordenadas visuales de la hoja.
+% Se oculta el pie original (que pdflscape desplaza al lado izquierdo).
+\newcommand{\paginaHorizontalCentro}{\par\vfill\noindent\makebox[\linewidth][c]{\normalfont\normalsize\thepage}\par\vspace*{2mm}}

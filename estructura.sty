@@ -1,0 +1,37 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{estructura}[2026/10/29 Semantica de tesis de posgrado v6]
+% SEMANTICA: estas instrucciones expresan QUE ES cada elemento,
+% mientras estilos.sty decide COMO SE VE.
+% Numeracion automatica del Plan de investigacion, independiente de Generalidades.
+\newcounter{tituloPlan}
+\newcounter{subtituloPlan}[tituloPlan]
+\newcounter{apartadoPlan}[subtituloPlan]
+\renewcommand{\thetituloPlan}{\arabic{tituloPlan}}
+\renewcommand{\thesubtituloPlan}{\thetituloPlan.\arabic{subtituloPlan}}
+\renewcommand{\theapartadoPlan}{\thesubtituloPlan.\arabic{apartadoPlan}}
+\newcommand{\encabezadoGeneralidades}{\section*{I. GENERALIDADES}}
+\newcommand{\encabezadoPlan}{\section*{II. PLAN DE INVESTIGACIÓN}}
+\newcommand{\rotuloPlan}[1]{\subsection*{#1}}
+\newcommand{\tituloPlan}[1]{\refstepcounter{tituloPlan}\subsection*{\thetituloPlan. #1}}
+\newcommand{\subtituloPlan}[1]{\refstepcounter{subtituloPlan}\subsubsection*{\thesubtituloPlan. #1}}
+% Encabezado semantico de nivel 2 inmediatamente seguido por leyenda de tabla.
+% El espacio POSITIVO se aplica solo a esta transicion; no altera el espaciado
+% de encabezados seguidos de parrafos ni el de listas.
+\newcommand{\subtituloPlanConTabla}[1]{%
+  \subtituloPlan{#1}%
+  \par\nobreak\vspace{12pt}%
+}
+\newcommand{\apartadoPlan}[1]{\refstepcounter{apartadoPlan}\tituloManual{\theapartadoPlan. #1}}
+% Las numeraciones de Generalidades son etiquetas propias de ese bloque,
+% no pertenecen al contador de Plan de investigacion.
+\newcommand{\itemGeneral}[2]{\generalitem{#1}{#2}}
+\newcommand{\subitemGeneral}[2]{\generalsub{#1}{#2}}
+\newcommand{\rotuloGeneral}[2]{\tituloManual{#1. #2}}
+\newcommand{\rotuloTablaGeneral}[2]{\tituloManualTabla{#1. #2}}
+% Tipos de lista explicitos. La lista con titulo tiene espacio inicial propio;
+% NO se agrega espacio universal posterior a todos los titulos.
+\newenvironment{listaTrasTitulo}{\begin{listatitulo}}{\end{listatitulo}}
+\newenvironment{listaNormal}{\begin{listacuerpo}}{\end{listacuerpo}}
+\newenvironment{listaRecursos}{\begin{listarecursos}}{\end{listarecursos}}
+% Párrafo académico ordinario: texto editable sin formato manual.
+\newcommand{\parrafoTesis}[1]{\par #1\par}

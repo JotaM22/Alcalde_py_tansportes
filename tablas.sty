@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tablas}[2026/10/29 Herramientas de tablas de posgrado]
+\RequirePackage{array,tabularx,booktabs,pdflscape,xcolor,colortbl,caption}
+% Titulos de tabla con numero en negrita y denominacion en cursiva, alineados a la izquierda.
+\newcommand{\tituloTabla}[2]{\noindent\textbf{Tabla #1}\par\noindent\emph{#2}\par\vspace{4pt}}
+\newcommand{\fuenteTabla}[1]{\par\vspace{9pt}\noindent{\small\raggedright Fuente: #1.\par}\vspace{3pt}}
+% Prototipo de cronograma: 32 semanas; anchura ajustable sin borrar divisiones.
+\newcommand{\cabeceraMeses}{\multicolumn{4}{c|}{Dic-25}&\multicolumn{4}{c|}{Ene-26}&\multicolumn{4}{c|}{Feb-26}&\multicolumn{4}{c|}{Mar-26}&\multicolumn{4}{c|}{Abr-26}&\multicolumn{4}{c|}{May-26}&\multicolumn{4}{c|}{Jun-26}&\multicolumn{4}{c|}{Jul-26}}
+% Para cambiar meses o duracion de una tesis, adaptar encabezados y filas del cronograma.
+
+% Tablas horizontales: tabularx con \linewidth (ancho de la caja de texto apaisada).
+% Para matrices usar \hline completo entre variables y \cline solo en columnas de dimension.
+\newcommand{\iniciotablaHorizontal}{\arrayrulecolor{black}\setlength{\arrayrulewidth}{0.32pt}\setlength{\tabcolsep}{3pt}}
+
+% Todas las tablas comienzan sin sangria y usan ancho completo del area de texto.
+\newcommand{\tablaSinSangria}{\par\noindent\ignorespaces}
+
+% Tabla de indicadores: cada indicador es un elemento independiente de una lista.
+\newcommand{\celdaIndicadores}[1]{\begingroup\setlength{\parskip}{0pt}\begin{itemize}[leftmargin=1.1em,label=--,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]#1\end{itemize}\endgroup}
+% Numeracion de pagina en paisaje: paginaHorizontalCentro justo antes del cierre.
+% El agente DEBE usar una columna por semana, agrupadas por mes en el encabezado.
