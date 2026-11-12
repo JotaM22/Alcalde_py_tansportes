@@ -4,8 +4,12 @@
 \usepackage{estructura}
 \usepackage{amsmath}
 
-\newcommand{\tituloTesis}{Implementación del Last Planner System y confiabilidad de la planificación semanal en el mantenimiento vial Limabamba-Challhuayacu, Amazonas}
-\newcommand{\campoPortada}{\rule{6cm}{0.35pt}}
+\newcommand{\tituloTesis}{Implementación del Last Planner System y confiabilidad de la planificación semanal en el mantenimiento vial Limabamba-Challhuayacu, Amazonas, \anioTesis}
+\newcommand{\anioTesis}{2026}
+\newcommand{\programaTesis}{Gerencia de la Construcción Moderna}
+\newcommand{\lineaTesis}{Ingeniería y Tecnología para el hábitat eficiente}
+\newcommand{\sublineaTesis}{Gestión de Proyectos de Infraestructura Civil}
+\newcommand{\modalidadTesis}{Distancia}
 
 \begin{document}
 \begin{titlepage}
@@ -13,18 +17,17 @@
 {\large\bfseries UNIVERSIDAD PRIVADA ANTENOR\\ORREGO\par}
 \vspace{.6cm}{\large ESCUELA DE POSGRADO\par}
 \vspace{.45cm}\includegraphics[height=4.7cm]{figuras/escudo.jpeg}\par\vspace{.6cm}
-\gradoPortada{PROYECTO DE TESIS PARA OPTAR EL GRADO DE MAESTRO}
+\gradoPortada{PROYECTO DE TESIS PARA OPTAR EL GRADO DE MAESTRO EN GERENCIA DE LA CONSTRUCCIÓN MODERNA}
 \bloqueTituloPortada{\tituloTesis}
 \begin{flushleft}
-\hspace*{.4cm}Programa: \campoPortada\\[5pt]
-\hspace*{.4cm}Línea de investigación: \campoPortada\\[5pt]
-\hspace*{.4cm}Sublínea de investigación: \campoPortada\\[14pt]
-\hspace*{1cm}\textbf{Autor:} \campoPortada\\[12pt]
-\hspace*{1cm}\textbf{Asesor:} \campoPortada\\[12pt]
-\hspace*{1cm}Código ORCID: \campoPortada
+\hspace*{.4cm}Línea de investigación: \lineaTesis\\[5pt]
+\hspace*{.4cm}Sublínea de investigación: \sublineaTesis\\[14pt]
+\hspace*{1cm}\textbf{Autor:}\\[23pt]
+\hspace*{1cm}\textbf{Asesor:}\\[12pt]
+\hspace*{1cm}Código ORCID:
 \end{flushleft}
-\vspace{.3cm}\textbf{TRUJILLO, PERÚ}\\[3pt]\rule{1.7cm}{0.35pt}\par
-\vspace{.2cm}\begin{flushleft}\hspace*{1.27cm}Modalidad: \campoPortada\end{flushleft}
+\vspace{1.1cm}\textbf{TRUJILLO - PERÚ}\\[3pt]\textbf{\anioTesis}\par
+\vspace{1.2cm}\begin{flushleft}\hspace*{1.27cm}Modalidad: \modalidadTesis\end{flushleft}
 \endgroup
 \end{titlepage}
 
@@ -34,28 +37,128 @@
 \itemGeneral{1.}{Título}
 \tituloTesis.
 \itemGeneral{2.}{Equipo investigador}
-\subitemGeneral{2.1.}{Autor(a)\enspace \campoPortada}
-\subitemGeneral{2.2.}{Asesor(a)\enspace \campoPortada}
+\subitemGeneral{2.1.}{Autor(a):}
+\subitemGeneral{2.2.}{Asesor(a):}
 \itemGeneral{3.}{Tipo de investigación}
 Investigación aplicada, de enfoque cuantitativo, alcance correlacional y diseño no experimental, longitudinal y observacional (Hernández Sampieri et al., 2014).
 \itemGeneral{4.}{Área y línea de investigación}
-\subitemGeneral{4.1.}{Línea\enspace \campoPortada}
-\subitemGeneral{4.2.}{Sublínea\enspace \campoPortada}
+\subitemGeneral{4.1.}{Línea: \normalfont\lineaTesis}
+\subitemGeneral{4.2.}{Sublínea: \normalfont\sublineaTesis}
 \itemGeneral{5.}{Unidad académica}
-Escuela de Posgrado de la Universidad Privada Antenor Orrego.
+Maestría en \programaTesis, Escuela de Posgrado de la Universidad Privada Antenor Orrego.
 \itemGeneral{6.}{Institución y localidad}
 Camino vecinal entre los desvíos de Limabamba y Challhuayacu de la ruta AM-676, distrito de Limabamba, provincia de Rodríguez de Mendoza, Amazonas. El expediente técnico identifica al Instituto Vial Provincial de Rodríguez de Mendoza como supervisor del servicio (apartado 1.01).
-\itemGeneral{7.}{Periodo de observación}
-La observación abarcará las semanas efectivas de ejecución que se identifiquen en los registros del servicio.
-% El cronograma académico y el presupuesto se incorporarán con la información indicada en PENDIENTES_VALIDACION.md.
-\itemGeneral{9.}{Recursos}
-El análisis requerirá acceso autorizado a los registros del servicio, fichas de extracción, un equipo de cómputo y el programa R.
+\itemGeneral{7.}{Duración del proyecto}
+El proyecto de investigación se desarrollará del 1 de julio al 31 de diciembre de \anioTesis. La observación abarcará las semanas efectivas de ejecución del servicio de mantenimiento vial durante \anioTesis.
 \endgroup
+\clearpage
+
+\begin{landscape}\thispagestyle{empty}
+\begingroup\setstretch{1.0}\setlength{\parskip}{0pt}
+\rotuloTablaGeneral{8}{Cronograma de trabajo}
+\refstepcounter{table}\label{tab:cronograma}
+\tituloTabla{\thetable}{Cronograma semanal del proyecto de investigación, 2026}
+\small
+\iniciotablaHorizontal
+\setlength{\tabcolsep}{1.5pt}
+\renewcommand{\arraystretch}{1.55}
+\noindent\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|*{27}{>{\centering\arraybackslash}p{0.52cm}|}}
+\hline
+\multirow{2}{*}{\textbf{Actividad}} & \multicolumn{5}{c|}{\textbf{Julio}} & \multicolumn{5}{c|}{\textbf{Agosto}} & \multicolumn{4}{c|}{\textbf{Septiembre}} & \multicolumn{4}{c|}{\textbf{Octubre}} & \multicolumn{5}{c|}{\textbf{Noviembre}} & \multicolumn{4}{c|}{\textbf{Diciembre}}\\ \cline{2-28}
+ & \textbf{27} & \textbf{28} & \textbf{29} & \textbf{30} & \textbf{31} & \textbf{32} & \textbf{33} & \textbf{34} & \textbf{35} & \textbf{36} & \textbf{37} & \textbf{38} & \textbf{39} & \textbf{40} & \textbf{41} & \textbf{42} & \textbf{43} & \textbf{44} & \textbf{45} & \textbf{46} & \textbf{47} & \textbf{48} & \textbf{49} & \textbf{50} & \textbf{51} & \textbf{52} & \textbf{53}\\ \hline
+Elaboración y presentación del proyecto & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+Revisión metodológica y preparación de fichas &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+Gestión de acceso e inventario de registros &  &  &  &  &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+Extracción y cotejo de registros semanales &  &  &  &  &  &  &  &  &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  &  &  &  &  &  & \\ \hline
+Consolidación de la base y cálculo de indicadores &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  &  &  &  & \\ \hline
+Análisis e interpretación de resultados &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet &  &  & \\ \hline
+Redacción y revisión del informe &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \textbullet & \textbullet & \textbullet & \textbullet & \\ \hline
+Entrega y sustentación &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \textbullet & \textbullet\\ \hline
+\end{tabularx}
+\fuenteTabla{Elaboración propia}
+\noindent Semanas calendario del 1 de julio al 31 de diciembre de 2026. El punto indica la programación de la actividad.
+\paginaHorizontalCentro
+\endgroup
+\end{landscape}
+
+\begingroup\setstretch{1.12}\setlength{\parskip}{4pt}
+\itemGeneral{9.}{Recursos}
+\subitemGeneral{9.1.}{Personal}
+\begin{listaRecursos}
+\item Un investigador.
+\item Un asesor.
+\end{listaRecursos}
+\subitemGeneral{9.1.1.}{Materiales y equipos disponibles}
+\begin{listaRecursos}
+\item Computadora personal.
+\item Disco duro portátil.
+\item Memoria USB.
+\item Escáner.
+\item Impresora.
+\item Kit multimedia.
+\item Programa R para el análisis estadístico.
+\end{listaRecursos}
+\subitemGeneral{9.1.2.}{Materiales y equipos no disponibles}
+\begin{listaRecursos}
+\item Materiales de escritorio.
+\item Silla ergonómica.
+\item Videocámara.
+\item Plóter.
+\end{listaRecursos}
+\subitemGeneral{9.2.}{Servicios}
+\subitemGeneral{9.2.1.}{Servicios disponibles}
+\begin{listaRecursos}
+\item Electricidad.
+\item Agua.
+\item Internet fijo.
+\item Internet móvil.
+\item Telefonía móvil.
+\end{listaRecursos}
+\subitemGeneral{9.2.2.}{Servicios no disponibles}
+\begin{listaRecursos}
+\item Pasajes y gastos de transporte.
+\item Servicio de procesamiento de datos.
+\item Servicios de comunicaciones por internet.
+\item Servicios de videoconferencia.
+\item Acceso a artículos científicos.
+\item Encuadernación, fotocopiado y empastado.
+\end{listaRecursos}
+\endgroup
+
+\clearpage
+\begingroup\setstretch{1.05}\setlength{\parskip}{0pt}
+\rotuloTablaGeneral{10}{Presupuesto}
+\refstepcounter{table}\label{tab:presupuesto}
+\tituloTabla{\thetable}{Cuadro de presupuesto de la investigación}
+\small
+\renewcommand{\arraystretch}{1.55}
+\setlength{\tabcolsep}{4pt}
+\noindent\begin{tabularx}{\linewidth}{|
+  >{\raggedright\arraybackslash}p{2.05cm}|
+  >{\raggedright\arraybackslash}X|
+  >{\centering\arraybackslash}p{1.70cm}|
+  >{\raggedleft\arraybackslash}p{1.90cm}|
+  >{\raggedleft\arraybackslash}p{1.65cm}|
+  >{\centering\arraybackslash}p{1.60cm}|}
+\hline
+\textbf{Clasificador MEF}&\textbf{Rubro}&\textbf{Cantidad}&\textbf{Precio unitario (S/)}&\textbf{Costo total (S/)}&\textbf{Financia}\\ \hline
+2.6.3.2.3 & Impresora multifuncional Epson EcoTank L3250 & 1 & 649,00 & 649,00 & Propio\\ \hline
+2.6.3.2.3.1 & Memoria USB de 32 GB & 1 & 12,90 & 12,90 & Propio\\ \hline
+2.3.1.5.1.2 & Kit de útiles de oficina & 1 & 45,20 & 45,20 & Propio\\ \hline
+2.3.1.9.1 & Libro de metodología de la investigación & 1 & 129,00 & 129,00 & Propio\\ \hline
+2.3.1.9.1.1 & Fotocopiado e impresión en blanco y negro, A4 & 300 hojas & 0,20 & 60,00 & Propio\\ \hline
+2.3.2.2.2.3 & Servicio de internet & 6 meses & 99,90 & 599,40 & Propio\\ \hline
+2.1.1 & Movilidad local y pasajes & 6 meses & 50,00 & 300,00 & Propio\\ \hline
+\multicolumn{4}{|c|}{\textbf{COSTO TOTAL}} & \multicolumn{2}{c|}{\textbf{1\,795,50}}\\ \hline
+\end{tabularx}
+\fuenteTabla{Elaboración propia}
+\endgroup
+
 \clearpage
 \encabezadoPlan
 
 \rotuloPlan{Resumen ejecutivo del proyecto de tesis}
-El mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, en Amazonas, constituye el caso de estudio para determinar la relación entre el grado de implementación del Last Planner System (LPS) y la confiabilidad de la planificación semanal. La investigación será aplicada, de enfoque cuantitativo, alcance correlacional y diseño no experimental, longitudinal y observacional. La unidad de análisis será la semana efectiva de ejecución con registros de planificación y cumplimiento que puedan vincularse. El grado de implementación se evaluará mediante una ficha de análisis documental que abarcará la planificación anticipada, la gestión de restricciones, la planificación semanal colaborativa y el seguimiento de los incumplimientos. La confiabilidad se examinará mediante el Porcentaje de Plan Completado (PPC), calculado como la proporción de compromisos originales terminados íntegramente durante la semana, según los partes de ejecución. Como medidas complementarias se examinarán la estabilidad de los compromisos y la recurrencia de las causas de incumplimiento. El procedimiento seguirá el marco de planificación y control de Ballard y Tommelein (2021). El análisis estimará la magnitud y la dirección de las asociaciones entre las variables a lo largo del periodo de ejecución. Los resultados aportarán evidencia para orientar la revisión de las prácticas de coordinación y control del servicio vial.
+La investigación determinará la relación entre el grado de implementación del Last Planner System (LPS) y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas, en 2026. El estudio será aplicado, de enfoque cuantitativo, alcance correlacional y diseño no experimental, longitudinal y observacional. La unidad de análisis será la semana efectiva de ejecución con registros de planificación y cumplimiento que puedan vincularse. El grado de implementación se evaluará mediante una ficha de análisis documental que abarcará la planificación anticipada, la gestión de restricciones, la planificación semanal colaborativa y el seguimiento de los incumplimientos. La confiabilidad se examinará mediante el Porcentaje de Plan Completado (PPC), calculado como la proporción de compromisos originales terminados íntegramente durante la semana, según los partes de ejecución. Como medidas complementarias se examinarán la estabilidad de los compromisos y la recurrencia de las causas de incumplimiento. El procedimiento seguirá el marco de planificación y control de Ballard y Tommelein (2021). El análisis estimará la magnitud y la dirección de las asociaciones entre las variables a lo largo del periodo de ejecución. Los resultados aportarán evidencia para orientar la revisión de las prácticas de coordinación y control del servicio vial.
 
 \tituloPlan{Problema}
 \subtituloPlan{Realidad problemática}
@@ -74,7 +177,7 @@ La confiabilidad se evaluará a partir de los compromisos registrados antes de c
 
 \subtituloPlan{Enunciado del problema}
 \apartadoPlan{Problema general}
-¿Qué relación existe entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas?
+¿Qué relación existe entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas, en 2026?
 
 \apartadoPlan{Problemas específicos}
 \begin{listaTrasTitulo}
@@ -102,7 +205,7 @@ Los resultados podrán orientar la revisión de las reuniones de planificación,
 
 \tituloPlan{Objetivos}
 \subtituloPlan{Objetivo general}
-Determinar la relación entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas.
+Determinar la relación entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas, en 2026.
 
 \subtituloPlan{Objetivos específicos}
 \begin{listaTrasTitulo}
@@ -168,7 +271,7 @@ Es la reaparición de una categoría de causa asociada a compromisos incumplidos
 Porcentaje obtenido al dividir los compromisos originales terminados íntegramente durante la semana entre el total de compromisos asumidos para ese periodo y multiplicar por cien (Ballard \& Tommelein, 2021).
 
 \apartadoPlan{Restricción}
-Condición pendiente, como la disponibilidad de materiales o la conclusión de un trabajo previo, que debe resolverse para ejecutar una actividad según lo previsto (Ballard \& Tommelein, 2021).
+Requisito de ejecución, como la disponibilidad de materiales o la conclusión de un trabajo previo, que debe resolverse para ejecutar una actividad según lo previsto (Ballard \& Tommelein, 2021).
 
 \apartadoPlan{Compromiso semanal}
 Acuerdo por el que un responsable se obliga a terminar una tarea definida en la fecha prevista en el plan semanal (Ballard \& Tommelein, 2021).
@@ -179,7 +282,7 @@ Motivo documentado por el cual un compromiso del plan semanal quedó sin complet
 
 \tituloPlan{Hipótesis}
 \subtituloPlan{Hipótesis general}
-Existe una asociación entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas.
+Existe una asociación entre el grado de implementación del Last Planner System y la confiabilidad de la planificación semanal durante el mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas, en 2026.
 
 \subtituloPlan{Hipótesis específicas}
 \begin{listaTrasTitulo}
@@ -252,10 +355,10 @@ Ficha de compromisos y ejecución. Registros de causas de semanas consecutivas.&
 
 \tituloPlan{Metodología}
 \subtituloPlan{Material}
-El expediente técnico delimitará el alcance y el plazo programado del mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas. La medición se sustentará en planes anticipados, matrices de restricciones, actas de coordinación, versiones originales de los planes semanales, partes de ejecución y registros de causas de incumplimiento. Se cotejarán las fechas y versiones para identificar los compromisos vigentes al inicio de cada semana y verificar su terminación (Ballard \& Tommelein, 2021).
+El expediente técnico delimitará el alcance y el plazo programado del mantenimiento periódico del camino vecinal Limabamba-Challhuayacu, Amazonas, en 2026. La medición se sustentará en planes anticipados, matrices de restricciones, actas de coordinación, versiones originales de los planes semanales, partes de ejecución y registros de causas de incumplimiento. Se cotejarán las fechas y versiones para identificar los compromisos vigentes al inicio de cada semana y verificar su terminación (Ballard \& Tommelein, 2021).
 
 \subtituloPlan{Población}
-La población comprenderá todas las semanas efectivas de ejecución del servicio. El inicio, las suspensiones y la culminación se identificarán mediante actas y partes de obra. El expediente establece un plazo programado de 90 días calendario, equivalente a 12,86 semanas al dividir los 90 días entre siete. La unidad de análisis será la semana efectiva de ejecución.
+La población comprenderá todas las semanas efectivas de ejecución del servicio durante 2026. El inicio, las suspensiones y la culminación se identificarán mediante actas y partes de obra. El expediente establece un plazo programado de 90 días calendario, equivalente a 12,86 semanas al dividir los 90 días entre siete. La unidad de análisis será la semana efectiva de ejecución.
 
 \subtituloPlan{Muestra}
 Se incluirán todas las semanas que dispongan de un plan original fechado antes de su ejecución, evidencia posterior de cumplimiento y registros de las prácticas del LPS que se evaluarán. La cobertura será censal si todas las semanas de la población cumplen estos criterios. Se documentarán las exclusiones por falta de evidencia o inconsistencias irresolubles. Para cada análisis específico se informará el número de semanas con datos para ambos indicadores.
@@ -264,7 +367,7 @@ Se incluirán todas las semanas que dispongan de un plan original fechado antes 
 Se aplicará análisis documental mediante una ficha de implementación del LPS, una ficha de compromisos y ejecución, y una matriz semanal. La primera registrará prácticas observables de planificación anticipada, gestión de restricciones, planificación colaborativa y seguimiento de incumplimientos. Cada práctica tendrá un criterio de verificación y una fuente identificable. La segunda ficha registrará los compromisos originales, su terminación, las modificaciones y las causas de incumplimiento. El PPC se calculará dividiendo los compromisos originales terminados íntegramente durante la semana entre los compromisos originales asumidos y multiplicando por cien (Ballard \& Tommelein, 2021).
 
 \subtituloPlan{Procedimientos}
-Primero, se verificará el periodo de ejecución y se inventariarán los registros de aplicación del LPS. Se preparará el diccionario de datos y se probarán las fichas en un conjunto inicial de registros para uniformar los criterios de extracción. Después, se asignará un identificador a cada compromiso y se vincularán el plan original, sus cambios y los partes de ejecución. Se revisarán duplicados, omisiones y discrepancias. Los datos faltantes se identificarán como tales. Finalmente, se consolidará una fila por semana, con los indicadores y sus fuentes. El PPC quedará sin calcular cuando el plan original carezca de compromisos.
+Primero, se delimitará el periodo de ejecución mediante las actas de obra y se inventariarán los registros de aplicación del LPS. Se preparará el diccionario de datos y se probarán las fichas en un conjunto inicial de registros para uniformar los criterios de extracción. Después, se asignará un identificador a cada compromiso y se vincularán el plan original, sus cambios y los partes de ejecución. Se revisarán duplicados, omisiones y discrepancias. Los datos faltantes se identificarán como tales. Finalmente, se consolidará una fila por semana, con los indicadores y sus fuentes. El PPC quedará sin calcular cuando el plan original carezca de compromisos.
 
 \subtituloPlan{Diseño de contrastación}
 La investigación será aplicada, de enfoque cuantitativo, alcance correlacional y diseño no experimental, longitudinal y observacional. Se analizarán mediciones semanales sucesivas de las prácticas del LPS y del cumplimiento de los compromisos a partir de los registros de ejecución (Hernández Sampieri et al., 2014).

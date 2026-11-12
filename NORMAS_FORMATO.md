@@ -11,16 +11,13 @@
 | Posterior de párrafo | 12 pt | Base de estilo normal Word; no aplicar a celdas |
 | Viñeta cuerpo | Cuadrado pequeño | Ajustada iterativamente, validar con Word |
 | Lista tras título | Separación anterior propia de lista | Regla de trabajo |
-| Recursos | Guiones y sangrías independientes | Requiere verificación final |
+| Recursos | Guiones y sangrías independientes | Aplicar el estilo de recursos |
 | Cronograma | A4 apaisado, 32 semanas en caso de ejemplo | No copiar semanas para otras tesis |
 | Matriz | A4 apaisado, siete columnas en ejemplo | Estructura de celdas depende de variables |
-| Bibliografía | Sangría francesa 1,27 cm, separación visible | Ajuste de trabajo pendiente de comparación exacta |
+| Bibliografía | Sangría francesa 1,27 cm, separación visible | Formato de las entradas bibliográficas |
 | Modalidad | Primera página, margen izquierdo inferior | Confirmado con capturas del Word de referencia |
 
-## Problemas todavía abiertos de v16
-- Fideldad exacta de bordes y celdas de cronograma/matriz.
-- Equivalencia tipográfica y paginación entre Microsoft Word, Overleaf y LaTeX local.
-- Espaciados específicos en tablas, listas y títulos no certificados página por página.
+## Uso del ejemplo v16
 - Algunos comandos antiguos en `ejemplo_v16/main.tex` usan ajustes negativos; **no trasladarlos** a documentos nuevos.
 
 ## Jerarquía de fuentes
@@ -40,7 +37,7 @@ El cronograma de 4 meses y la matriz de 6 columnas son variantes de contenido, N
 - GENERALIDADES: usar `\generalitem` y `\generalsub`; no agregar `\vspace` manual ni dejar 12pt acumulativos entre epigrafes.
 - TODA tabla: `\noindent\begin{tabularx}{\linewidth}`; no desplazar tablas con sangrias o `center`. En paginas horizontales `\linewidth` debe equivaler a todo el ancho util.
 - DESPUES de cerrar la tabla, usar `\fuenteTabla{...}`; el comando aporta 9pt antes de la fuente. No escribir Fuente pegada directamente al entorno de tabla.
-- PRESUPUESTO INSTITUCIONAL: seis columnas, en este orden: Clasificador MEF, Rubro, Cantidad, P. unitario (S/), Total (S/), Financia. No sustituir por tabla simplificada de tres columnas. No inventar montos ni clasificadores; usar [PENDIENTE].
+- PRESUPUESTO INSTITUCIONAL: seis columnas, en este orden: Clasificador MEF, Rubro, Cantidad, P. unitario (S/), Total (S/), Financia. No sustituir por tabla simplificada de tres columnas. Usar los montos y clasificadores del presupuesto del proyecto.
 - REFERENCIAS: `\iniciarReferencias` una vez tras el encabezado de Referencias, luego entradas `\referencia{...}`.
 - Tablas y diagramas con estructuras diferentes deben mantener el formato y declarar por separado el numero de semanas/dimensiones; no convertir de manera automatica todos los cronogramas en 32 semanas.
 

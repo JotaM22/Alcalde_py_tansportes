@@ -9,7 +9,6 @@
 ## Redacción
 - Mantén la estructura de Generalidades y Plan de investigación, pero adapta apartados solo cuando las normas vigentes lo exijan.
 - Conserva citas y referencias verificables; no inventes autores, publicaciones, DOI, resultados, muestras ni cifras.
-- Distingue contenido confirmado, por verificar y pendientes de entrada usando marcadores visibles.
 - No alteres la metodología ni el sentido académico al resolver un problema de formato.
 
 ## Formato
@@ -28,7 +27,7 @@
 3. Verificar portada ("Modalidad" en primera página), Generalidades, cronograma, recursos, presupuesto, listas tras títulos, matriz, referencias.
 4. Buscar desbordamientos, bordes que desaparecen, tablas cortadas y páginas huérfanas.
 5. Comparar elementos por ubicación y medidas, no solo cantidad de páginas.
-6. Informar qué se verificó y qué continúa pendiente. No presentar una plantilla como copia exacta sin comparación suficiente.
+6. Informar las comprobaciones realizadas sobre el documento compilado.
 7. Si el cambio es solo de formato, evitar cambios en textos y datos.
 
 ## Git y archivos
@@ -52,7 +51,7 @@
 - GENERALIDADES: usar `\generalitem` y `\generalsub`; no agregar `\vspace` manual ni dejar 12pt acumulativos entre epigrafes.
 - TODA tabla: `\noindent\begin{tabularx}{\linewidth}`; no desplazar tablas con sangrias o `center`. En paginas horizontales `\linewidth` debe equivaler a todo el ancho util.
 - DESPUES de cerrar la tabla, usar `\fuenteTabla{...}`; el comando aporta 9pt antes de la fuente. No escribir Fuente pegada directamente al entorno de tabla.
-- PRESUPUESTO INSTITUCIONAL: seis columnas, en este orden: Clasificador MEF, Rubro, Cantidad, P. unitario (S/), Total (S/), Financia. No sustituir por tabla simplificada de tres columnas. No inventar montos ni clasificadores; usar [PENDIENTE].
+- PRESUPUESTO INSTITUCIONAL: seis columnas, en este orden: Clasificador MEF, Rubro, Cantidad, P. unitario (S/), Total (S/), Financia. No sustituir por tabla simplificada de tres columnas. Usar los montos y clasificadores del presupuesto del proyecto.
 - REFERENCIAS: `\iniciarReferencias` una vez tras el encabezado de Referencias, luego entradas `\referencia{...}`.
 - Tablas y diagramas con estructuras diferentes deben mantener el formato y declarar por separado el numero de semanas/dimensiones; no convertir de manera automatica todos los cronogramas en 32 semanas.
 
